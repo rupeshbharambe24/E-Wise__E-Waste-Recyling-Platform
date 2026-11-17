@@ -66,4 +66,5 @@ Action Required: Please confirm this pickup.
         }), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Default to 5001 so it can run next to the chatbot service (port 5000)
+    app.run(debug=True, port=int(os.getenv('PORT', 5001)))

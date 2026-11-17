@@ -1,4 +1,5 @@
 // pages/api/infer.ts
+// Requires ROBOFLOW_API_KEY in e-waste-webapp/.env.local (see .env.example)
 
 import { NextApiRequest, NextApiResponse } from "next";
 import formidable from "formidable";
@@ -13,7 +14,7 @@ export const config = {
 
 const CLIENT = new InferenceHTTPClient({
   apiUrl: "https://serverless.roboflow.com",
-  apiKey: "REDACTED",
+  apiKey: process.env.ROBOFLOW_API_KEY ?? "",
 });
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {

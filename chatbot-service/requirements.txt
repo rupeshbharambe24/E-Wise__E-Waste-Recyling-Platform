@@ -1,0 +1,8 @@
+flask
+flask-cors
+python-dotenv
+google-generativeai
+# optional, only for CLI text-to-speech in ewaste_assistant.py
+gTTS
+pyttsx3
+playsound==1.2.2

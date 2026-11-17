@@ -1,0 +1,28 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+.ipynb_checkpoints/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+
+# Training data and ad-hoc outputs (dataset is not redistributed)
+model-training/datasets/
+model-training/yolo11n.pt
+model-training/e-waste-classifier.pt
+runs/detect/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
